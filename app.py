@@ -23,6 +23,8 @@ Run the app with::
 Then open the URL displayed in your terminal.
 """
 import os
+
+
 import tempfile
 
 import streamlit as st
@@ -73,6 +75,7 @@ def main() -> None:
                 )
             # Clean up the temporary zip file after processing
             os.unlink(temp_zip_path)
+
 
 
 if __name__ == "__main__":
